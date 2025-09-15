@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Responsive E-Commerce</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Shoply</h1>
+      <nav>
+        <button id="cartBtn" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="products" class="product-grid"></section>
+  </main>
+
+  <!-- Cart modal -->
+  <div id="cartModal" class="cart-modal hidden">
+    <div class="cart-panel">
+      <button id="closeCart" class="close-btn">✕</button>
+      <h2>Your Cart</h2>
+      <ul id="cartItems" class="cart-items"></ul>
+      <div class="cart-footer">
+        <div id="cartTotal">Total: ₹0</div>
+        <div>
+          <button id="clearCart" class="btn">Clear</button>
+          <button id="checkout" class="btn primary">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
